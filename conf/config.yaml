@@ -1,0 +1,23 @@
+data:
+    root_data_dir : '../data/train/'
+    val_data_dir : '../data/val/'
+    sup_data_dir : '../data/supervised/'
+param:
+    arch : 'dofa'
+    chkpt_freq : 50
+    eval_freq : 50
+    proj_dim : 128 ## projector final dim
+    samples : 100_000 ## number of random samples
+    sampling_size : 150
+    batch_size : 40
+    num_workers : 0
+    warmup : 200
+    lr : 5e-4
+    lamb : 0.02
+    seed : 42
+    peft : True
+    nproj_layers : 3
+    pretrained : True
+    rank : 8
+
+
